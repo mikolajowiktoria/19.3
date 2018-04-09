@@ -7,31 +7,6 @@ const REMOVE_COMMENT = 'REMOVE_COMMENT';
 const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
 const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
-{
-    type: CREATE_COMMENT,
-    id: uuid.v4(),
-    text: 'this is a new comment!'
-}
-{
-    type: EDIT_COMMENT,
-    id: uuid.v4(),
-    text: 'this is edited content of the comment'
-}
-{
-    type: REMOVE_COMMENT,
-    id: uuid.v4()
-}
-{
-    type: THUMB_UP_COMMENT,
-    id: uuid.v4(),
-    votes: 0
-}
-{
-    type: THUMB_DOWN_COMMENT,
-    id: uuid.v4(),
-    votes: 0
-}
-
 
 export function createComment(text) {
     return {
